@@ -211,9 +211,9 @@ my $c = $db->get_collection('bar');
 
 # moose numbers
 package Person;
-use Any::Moose;
-has 'name' => ( is=>'rw', isa=>'Str' );
-has 'age' => ( is=>'rw', isa=>'Int' );
+use Mojo::Base -base;
+has name => sub { undef };
+has age  => sub { undef };
 
 package main;
 {

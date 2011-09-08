@@ -12,7 +12,7 @@ author 'minimalist <minimalist@lavabit.com>';
 license 'Apache';
 all_from 'lib/MojoX/MongoDB.pm';
 
-requires 'Mojo::Base';
+requires 'Mojolicious';
 requires 'Digest::MD5';
 requires 'Tie::IxHash';
 requires 'DateTime';
@@ -43,7 +43,7 @@ if ($Config::Config{useithreads}) {
 WriteAll;
 
 package MY;
-our $VERSION = '0.441';
+our $VERSION = '0.452';
 
 use Config;
 

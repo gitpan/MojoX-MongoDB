@@ -3,7 +3,7 @@ use warnings;
 
 package MojoX::MongoDB;
 
-our $VERSION = '0.441';
+our $VERSION = '0.452';
 
 use XSLoader;
 

@@ -33,7 +33,7 @@ no_index:
 requires:
   DateTime: 0
   Digest::MD5: 0
-  Mojo::Base: 0
+  Mojolicious: 0
   Tie::IxHash: 0
   XSLoader: 0
   boolean: 0
@@ -41,4 +41,4 @@ requires:
 resources:
   license: http://apache.org/licenses/LICENSE-2.0
   repository: git://github.com/naturalist/MojoX-MongoDB.git
-version: 0.441
+version: 0.452
