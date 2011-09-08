@@ -36,7 +36,7 @@ MojoX::MongoDB - Mongo Driver for Perl Mojolicious
 
 =head1 DESCRIPTION
 
-This module uses the same API as L<MongoDB>. The only changes between L<MongoDB> and
+This module uses the same code and API as L<MongoDB>. The only changes between L<MongoDB> and
 this modules are:
 
 =over

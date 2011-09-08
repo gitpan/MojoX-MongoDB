@@ -33,7 +33,7 @@ mongo;
 
 no_index directory => 'ext';
 
-repository 'git://github.com/naturalist/mongo-perl-driver.git';
+repository 'git://github.com/naturalist/MojoX-MongoDB.git';
 
 
 if ($Config::Config{useithreads}) {
