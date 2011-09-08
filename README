@@ -1,0 +1,36 @@
+NAME
+    MojoX::MongoDB - Mongo Driver for Perl Mojolicious
+
+SYNOPSIS
+        use MojoX::MongoDB;
+
+        my $connection = MojoX::MongoDB::Connection->new(host => 'localhost', port => 27017);
+        my $database   = $connection->foo;
+        my $collection = $database->bar;
+        my $id         = $collection->insert({ some => 'data' });
+        my $data       = $collection->find_one({ _id => $id });
+
+DESCRIPTION
+    This module uses the same API as MongoDB. The only changes between
+    MongoDB and this modules are:
+
+    *   The default datetime is changed from DateTime to
+        MojoX::MongoDB::DateTime. This will considerably speed up all
+        queries to the Mongo database that contain a date time object.
+
+    *   Any::Moose is replaced with Mojo::Base
+
+    Please refer to the MongoDB documentation and API for more information.
+
+AUTHORS
+      Florian Ragwitz <rafl@debian.org>
+      Kristina Chodorow <kristina@mongodb.org>
+      minimalist <minimalist@lavabit.com>
+
+COPYRIGHT AND LICENSE
+    This software is Copyright (c) 2011 by 10Gen.
+
+    This is free software, licensed under:
+
+    The Apache License, Version 2.0, January 2004
+
